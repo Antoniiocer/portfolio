@@ -1,0 +1,22 @@
+@use "/src/styles/variables" as *;
+
+.projects {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+  padding-bottom: 5vh;
+
+  .projects-title {
+    font-size: calc(20px + 2vw);
+    font-weight: 500;
+    width: 100%;
+    border-bottom: color("border") 1px solid;
+  }
+
+  .projects-sub-title {
+    font-size: calc(20px + 2vw);
+    font-weight: 500;
+  }
+}

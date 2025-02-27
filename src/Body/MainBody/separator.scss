@@ -1,0 +1,8 @@
+@use "../../styles/variables" as *;
+
+
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

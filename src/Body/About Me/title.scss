@@ -1,0 +1,16 @@
+@use "../../styles/variables" as *;
+
+
+.about-me-title-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: color("border") 1px solid;
+  padding-bottom: 5vh;
+  .about-me-title {
+    font-size: calc(20px + 2vw);
+    font-weight: 500;
+  }
+}

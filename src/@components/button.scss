@@ -1,0 +1,53 @@
+@use "/src/styles/variables" as *;
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  user-select: none;
+
+
+  .button-sub-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 2;
+    background-color: color("background");
+
+    .button-sub-sub-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      z-index: 2;
+      gap: 1rem;
+      background-color: color("background");
+      padding-bottom: 5px;
+
+      .button-text {
+        font-size: calc(10px + .3vw);
+        color: color("text");
+      }
+
+    }
+
+    .button-background {
+      position: absolute;
+      inset: -5px;
+      background: color("secondary");
+      z-index: 1;
+      width: 0;
+      transition: width 0.5s ease-in-out;
+    }
+
+    &:hover .button-background {
+      width: 100%;
+    }
+  }
+}

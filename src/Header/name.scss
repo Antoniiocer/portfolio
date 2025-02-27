@@ -1,0 +1,28 @@
+@use "../styles/variables" as *;
+
+.title-name-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .title-name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: normal;
+    cursor: default;
+    user-select: none;
+    font-size: calc(10px + .3vw);
+  }
+
+  .title-name-sub-container {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    .cursor-blinking {
+      height: 2px;
+      width: 10px;
+      background-color: color("text");
+    }
+  }
+}

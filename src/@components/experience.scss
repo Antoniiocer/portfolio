@@ -1,0 +1,59 @@
+@use "/src/styles/variables" as *;
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10vw;
+.experience-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .experience-title {
+    font-size: calc(20px + 2vw);
+    border-bottom: color("border") 2px solid;
+    &:hover {
+      color: color("border");
+      cursor: pointer;
+    }
+  }
+    .experience-subtitle {
+      font-size: calc(15px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-weight: bold;
+    }
+  .experience-techs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+    width: 330px;
+  }
+
+  .experience-techs .icon {
+    text-align: center;
+    font-size: 24px;
+    color: black
+  }
+
+}
+  .experience-description {
+    width: 50%;
+    color: color("secondary-text")
+  }
+
+  @media (max-width: 1120px) {
+    flex-direction: column;
+    gap: 5vw;
+    .experience-description {
+      width: 100%;
+    }
+  }
+
+}
+

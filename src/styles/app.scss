@@ -1,0 +1,11 @@
+@use "variables" as *;
+.app {
+  width: 80vw;
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+  background-color: color("background");
+}

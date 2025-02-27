@@ -1,0 +1,16 @@
+@use "../../styles/variables" as *;
+
+.about-me-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  color: color("secondary-text");
+  width: 80%;
+  gap: 2rem;
+  font-size: 20px;
+
+  @media (max-width: 1600px) {
+    font-size: 17px;
+  }
+}

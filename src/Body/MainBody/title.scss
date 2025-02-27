@@ -1,0 +1,78 @@
+@use "../../styles/variables" as *;
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+
+  .title-role-container:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .title-role-container:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+  }
+
+  .title-role-underbar {
+    height: 5px;
+    background-color: color("secondary");
+    display: inline-block;
+    width: calc(60px + 30vw);
+  }
+
+}
+
+.title-role {
+  font-weight: 500;
+  font-size: calc(90px + 5vw);
+  cursor: default;
+  user-select: none;
+  margin: 0;
+}
+
+@media (max-width: 1280px) {
+
+  .title-role {
+    font-size: calc(70px + 4vw);
+    font-weight: 600;
+  }
+
+  .title-name {
+    font-size: calc(30px + 2vw);
+    font-weight: 600;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .title-role {
+    font-size: calc(50px + 3vw);
+    font-weight: 600;
+  }
+
+  .title-name {
+    font-size: calc(30px + 2vw);
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-role {
+    font-size: calc(30px + 4vw);
+    font-weight: 700;
+  }
+
+  .title-name {
+    font-size: calc(20px + 3vw);
+    font-weight: 700;
+  }
+}

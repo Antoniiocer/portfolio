@@ -1,0 +1,47 @@
+@use "sass:map";
+
+$charcoal: #313e50ff;
+$turkey-red: #a30000ff;
+$bleu-de-france: #1789fcff;
+$ghost-white: #f7f5fbff;
+$maize: #f4e04dff;
+$gray: #8a8a8aff;
+
+
+// Color palette
+$palette: (
+        "primary": $charcoal,
+        "secondary": $turkey-red,
+        "accent": $bleu-de-france,
+        "background": $charcoal,
+        "highlight": $maize,
+        "text": $ghost-white,
+        "border": rgba(255, 255, 255, 0.2),
+        "shadow": rgba(0, 0, 0, 0.5),
+        "secondary-text": $gray
+);
+
+
+// Function to get colors from the palette
+@function color($name) {
+  @return map.get($palette, $name);
+}
+
+// Spacing variables
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 32px;
+
+// Font sizes
+$font-small: 14px;
+$font-medium: 18px;
+$font-large: 24px;
+$font-title: 32px;
+
+// Font weights
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Borders and shadows
+$border-radius: 8px;
+$box-shadow: 0 4px 8px color("shadow");
