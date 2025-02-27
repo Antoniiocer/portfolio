@@ -8,4 +8,5 @@ module.exports = {
   },
   darkMode: "class",
   plugins: [],
+  base: "/portfolio",
 };
